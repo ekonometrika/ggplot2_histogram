@@ -7,7 +7,7 @@ View(gapminder)
 #####  HISTOGRAM
 ggplot(data = distribucija_kontinenta, aes(x=continent, y=n)) + 
   geom_bar(stat = "identity", color="darkgoldenrod1", fill="chocolate4", linetype = "dashed") +   #modification of bars
-  ggtitle("Distribucija zemalja po kontinentima") +                    #naming a graph
+  ggtitle("Distribucija zemalja po kontinentima") +                    #name a graph
   xlab("kontinent") + ylab("broj zemalja") +                           #naming x and y axis
   theme(panel.background = element_rect(fill = "cadetblue4"),          #modification of panel background (space behind bars)
         panel.grid.major = element_blank(),                            #modification of major gridlines (horizontal and vertical gridlines)
