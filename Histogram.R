@@ -6,15 +6,15 @@ View(gapminder)
 
 #####  HISTOGRAM
 ggplot(data = distribucija_kontinenta, aes(x=continent, y=n)) + 
-  geom_bar(stat = "identity", color="darkgoldenrod1", fill="chocolate4", linetype = "dashed") +   #modificira same stupove
-  ggtitle("Distribucija zemalja po kontinentima") +
-  xlab("kontinent") + ylab("broj zemalja") + 
-  theme(panel.background = element_rect(fill = "cadetblue4"),          #modifikacija pozadine panela (područja na kojem graf stoji)
-        panel.grid.major = element_blank(),                            #modificira major gridlines (i vertikalne i horizontalne)
-        panel.grid.minor = element_blank(),                            #modificira minor gridlines (samo horizontalne crte)
-        plot.background =  element_rect(fill = "darkslategrey"),       #modifikacija plota (prostor van grafa)
-        plot.title = element_text(colour = "cornsilk", hjust = 0.5),   #modificira naslov (glavni title)
-        axis.line = element_line(color = "chartreuse"),                #modificira x i y osi (da je axis.line.x onda bi samo x-os)
-        axis.text = element_text(color = "yellow"),                    #modificira tekst na osima
-        axis.title = element_text(color = "cyan"),                     #modificira naslove osi
-        axis.ticks = element_line(color = "red", size = 1.1))  
+  geom_bar(stat = "identity", color="darkgoldenrod1", fill="chocolate4", linetype = "dashed") +   #modification of bars
+  ggtitle("Distribucija zemalja po kontinentima") +                    #naming a graph
+  xlab("kontinent") + ylab("broj zemalja") +                           #naming x and y axis
+  theme(panel.background = element_rect(fill = "cadetblue4"),          #modification of panel background (space behind bars)
+        panel.grid.major = element_blank(),                            #modification of major gridlines (horizontal and vertical gridlines)
+        panel.grid.minor = element_blank(),                            #modification of minor gridlines (horizontal gridlines)
+        plot.background =  element_rect(fill = "darkslategrey"),       #modification of plot background 
+        plot.title = element_text(colour = "cornsilk", hjust = 0.5),   #modification of main title
+        axis.line = element_line(color = "chartreuse"),                #modification of axis lines
+        axis.text = element_text(color = "yellow"),                    #modification of text and frequencies on axis
+        axis.title = element_text(color = "cyan"),                     #modification of axis labels
+        axis.ticks = element_line(color = "red", size = 1.1))          #modification of axis ticks
