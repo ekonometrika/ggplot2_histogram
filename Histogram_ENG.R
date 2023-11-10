@@ -12,8 +12,8 @@ gapminder_grouped                          #grouped data - now we can generate h
 #####  HISTOGRAM
 ggplot(data = gapminder_grouped, aes(x=continent, y= n)) + 
   geom_bar(stat = "identity", color="darkgoldenrod1", fill="chocolate4", linetype = "dashed") +   #modification of bars
-  ggtitle("Distribucija zemalja po kontinentima") +                    #naming a graph
-  xlab("continent") + ylab("countries") +                           #naming x and y axis
+  ggtitle("Number of countries by continent") +                        #naming a graph
+  xlab("continent") + ylab("countries") +                              #naming x and y axis
   theme(panel.background = element_rect(fill = "cadetblue4"),          #modification of panel background (space behind bars)
         panel.grid.major = element_blank(),                            #modification of major gridlines (horizontal and vertical gridlines)
         panel.grid.minor = element_blank(),                            #modification of minor gridlines (horizontal gridlines)
